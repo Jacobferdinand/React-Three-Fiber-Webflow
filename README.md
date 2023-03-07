@@ -6,7 +6,9 @@ ES-lint with react plugin and prettier is also includet in the repository.
 
 
 install the dependencies: npm i
+
 run dev server: npm run dev
+
 
 ✋✋✋
 During developement you need to add this code inside the head tag of your webflow project: 
