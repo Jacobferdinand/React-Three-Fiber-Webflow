@@ -1,32 +1,33 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: "localhost",
-    cors: "*",
+    host: 'localhost',
+    cors: '*',
     hmr: {
-      host: "localhost",
-      protocol: "ws",
+      host: 'localhost',
+      protocol: 'ws',
     },
   },
   build: {
     minify: true,
     manifest: true,
+    outDir: 'build',
     rollupOptions: {
-      input: "./src/main.jsx",
+      input: './src/main.jsx',
       output: {
-        format: "umd",
-        entryFileNames: "main.jsx",
+        format: 'umd',
+        entryFileNames: 'main.js',
         esModule: false,
         compact: true,
         globals: {
-          jquery: "$",
+          jquery: '$',
         },
       },
-      external: ["jquery"],
+      external: ['jquery'],
     },
   },
-});
+})
