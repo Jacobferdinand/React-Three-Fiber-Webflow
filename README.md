@@ -36,6 +36,7 @@ During developement, you also need to add this at the end of the body tag:
 You might need to change the localhost number.
 for production you want to to change it to the production URL. Don't forget to update the _headers file in the public folder or you will get a CORS ERROR.
 
+Here is a read only link to my webflow starter file: https://preview.webflow.com/preview/react-three-fiber-template?utm_medium=preview_link&utm_source=designer&utm_content=react-three-fiber-template&preview=0a7522a483083f5f470016acbf68076e&workflow=preview
 
 To render your project inside Webflow , you also need to add a div with the id="root" and set it to the appropriate size.
 
